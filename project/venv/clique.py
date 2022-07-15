@@ -1,0 +1,16 @@
+import networkx as nx
+G = nx.path_graph(5)
+cliques = list(nx.enumerate_all_cliques(G))
+barbell = nx.barbell_graph(11, 7)
+#barbell1 = nx.make_max_clique_graph(barbell)
+#cliques1 = list(nx.enumerate_all_cliques(barbell))
+# print(nx.number_of_cliques(barbell))
+# print(barbell1.nodes())
+# print(cliques)
+# print(cliques1)
+
+lol = nx.lollipop_graph(7, 5)
+cliquesx = list(nx.find_cliques(lol))
+cliquesy = list(nx.find_cliques(barbell))
+print(cliquesx)
+print(cliquesy)
